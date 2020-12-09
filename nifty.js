@@ -198,9 +198,8 @@ violetBtnDiv.append(violetIcon, violetHeading, violetText, buttonsDiv)
 function createItem2(){
     var previousPage1 = document.getElementById("page1")
     previousPage1.style.display = "none"
-
-    var mainParent = document.getElementById("violetBtnItems") 
-
+    var pageItem=document.querySelector(".pageImg")
+    pageItem.style.display="none"
     var page2 = document.createElement("div")
     page2.setAttribute("id", "page2")
 
@@ -233,11 +232,11 @@ function createItem2(){
     pageTrial.textContent = "Start Free Trial"
 
     var pageImg = document.createElement("img")
-    pageImg.setAttribute("src", "https://niftypm.com/_nuxt/img/large@1x.ba76fb1.webp")
-    pageImg.setAttribute("class", "pageImg")
+    pageImg.setAttribute("src", "https://niftypm.com/_nuxt/img/large@2x.c0e68d1.webp")
+    pageImg.setAttribute("class", "pageImg8")
 
-    page2.append(serialNo, pageHead, pagePara1, pagePara2, pagePara3, pagePara4, pageTrial)
-    mainParent.append(previousPage1, page2, pageImg)
+    page2.append(serialNo, pageHead, pagePara1, pagePara2, pagePara3, pagePara4, pageTrial,pageImg)
+    mainParent.append(previousPage1, page2)
 }
 violetBtn2.addEventListener("click", createItem2)
 
@@ -283,10 +282,10 @@ function createItem3(){
 
     var pageImg = document.createElement("img")
     pageImg.setAttribute("src", "https://niftypm.com/_nuxt/img/large@1x.ba76fb1.webp")
-    pageImg.setAttribute("class", "pageImg")
+    pageImg.setAttribute("class", "pageImg1")
 
-    page3.append(serialNo, pageHead, pagePara1, pagePara2, pagePara3, pagePara4, pageTrial)
-    mainParent.append(previousPage1,previousPage2, page3, pageImg)
+    page3.append(serialNo, pageHead, pagePara1, pagePara2, pagePara3, pagePara4, pageTrial,pageImg)
+    mainParent.append(previousPage1,previousPage2, page3)
 }
 violetBtn3.addEventListener("click", createItem3)
 
@@ -295,10 +294,12 @@ function createItem4(){
     var previousPage1 = document.getElementById("page1")
     var previousPage2 = document.getElementById("page2")
     var previousPage3 = document.getElementById("page3")
+    var pageItem=document.querySelector(".pageImg")
+    pageItem.style.display="none"
     previousPage1.style.display = "none"
     previousPage2.style.display = "none"
     previousPage3.style.display = "none"
-
+    
     var mainParent = document.getElementById("violetBtnItems") 
 
     var page4 = document.createElement("div")
@@ -333,11 +334,11 @@ function createItem4(){
     pageTrial.textContent = "Start Free Trial"
 
     var pageImg = document.createElement("img")
-    pageImg.setAttribute("src", "https://niftypm.com/_nuxt/img/large@1x.ba76fb1.webp")
-    pageImg.setAttribute("class", "pageImg")
+    pageImg.setAttribute("src", "https://niftypm.com/_nuxt/img/large@2x.6141843.webp")
+    pageImg.setAttribute("class", "pageImg9")
 
-    page4.append(serialNo, pageHead, pagePara1, pagePara2, pagePara3, pagePara4, pageTrial)
-    mainParent.append(previousPage1,previousPage2,previousPage3, page4, pageImg)
+    page4.append(serialNo, pageHead, pagePara1, pagePara2, pagePara3, pagePara4, pageTrial,pageImg)
+    mainParent.append(previousPage1,previousPage2,previousPage3, page4)
 }
 violetBtn4.addEventListener("click", createItem4)
 //Rudra Code
@@ -415,20 +416,18 @@ function createLoginPage(){
     var main1_class = document.querySelector(".main1")
     var logos = document.getElementById("logosDiv")
     var top = document.getElementById("topBar")
-
+     threeBlocks.style.display = "none"
     logos.style.display = "none"
     top.style.display = "none"
     firstCont.style.display = "none"
     googleBox.style.display = "none"
     firstLeftImg.style.display = "none"
-    firstRightImg.style.display = "none"
     violetBtnHldr.style.display = "none"
     btnDiv.style.display = "none"
     violetBtnItms.style.display = "none"
     pageImg.style.display = "none"
     firstParnt.style.display = "none"
     yelloLogo.style.display = "none"
-    threeBlocks.style.display = "none"
     main_class.style.display = "none"
     main1_class.style.display = "none"
 
@@ -456,7 +455,7 @@ function createLoginPage(){
      var signup=document.createElement('div')
      signup.setAttribute('class','bottomsignup')
      signup.innerHTML="<p>Do not have an account?</p><br/><button>Sign up for free</button>"
-    loginParent.append(h,fm,bttn,lg,google,signup)
+     loginParent.append(h,fm,bttn,lg,google,signup)
 }
 loginBtn.addEventListener("click",createLoginPage)
 
@@ -484,7 +483,6 @@ function createClientPage(){
     firstCont.style.display = "none"
     googleBox.style.display = "none"
     firstLeftImg.style.display = "none"
-    firstRightImg.style.display = "none"
     violetBtnHldr.style.display = "none"
     btnDiv.style.display = "none"
     violetBtnItms.style.display = "none"
@@ -526,7 +524,7 @@ function createClientPage(){
     tryFree.textContent = "Try Nifty For Free"
 
     var googleLogo = document.createElement("img")
-    googleLogo.setAttribute("src","https://pbs.twimg.com/profile_images/1305883698471018496/_4BfrCaP_200x200.jpg")
+    googleLogo.setAttribute("src","https://lh3.googleusercontent.com/-URJHYOtHEdQ/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclzO7DpDu_9HO2y3udDS_5BkhCKZw/s128-c/photo.jpg")
     googleLogo.setAttribute("class","googleLogo")
 
     var firstFooter = document.createElement("p")
@@ -549,18 +547,54 @@ function createClientPage(){
     btn1.addEventListener("mouseover", function(){
         btn1.style.backgroundColor = "rgb(248, 109, 109)"
         btnFoot1.style.color = "rgb(248, 109, 109)"
-    })
-
+         })
+         var text11=document.createElement('h1')
+         text11.setAttribute('class','text11')
+         text11.innerHTML="<h1>01.</h1>"
+         var text12=document.createElement('p')
+         text12.setAttribute('class','text12')
+         text12.innerHTML="<h2>Streamlined <br/> Communication</h2>"
+         var text13=document.createElement('p')
+         text13.setAttribute('class','text13')
+         text13.innerHTML="A space for your team and clients to share ideas,<br/> gather feedback, finalize specs, and turn<br/> discussions into actions."
+         var ug=document.createElement('img')
+         ug.setAttribute('class','ug')
+         ug.setAttribute('src','https://niftypm.com/_nuxt/img/large@2x.637a71d.webp')
+         secondDiv.append(text11,text12,text13,ug)
+       
     var btn2 = document.createElement("button")
     btn2.setAttribute("class", "orangeBtn2")
     var btnFoot2 = document.createElement("p")
     btnFoot2.setAttribute("class", "btnFoot2")
     btnFoot2.textContent = "AUTOMATED REPORTING"
     btn2.addEventListener("mouseover", function(){
-        btn2.style.backgroundColor = "rgb(248, 109, 109)"
-        btnFoot2.style.color = "rgb(248, 109, 109)"
+         btn2.style.backgroundColor = "rgb(248, 109, 109)"
+         btnFoot2.style.color = "rgb(248, 109, 109)"
     })
-
+     btn2.addEventListener('click',function(){
+         text11.style.display='none'
+         text12.style.display='none'
+         text13.style.display='none'
+         ug.style.display='none'
+         //var pot=document.getElementById("poc")
+         //poc.style.display='none'
+         var pp=document.createElement('div')
+         pp.setAttribute("id","ppo")
+         var text111=document.createElement('h1')
+         text111.setAttribute('class','text111')
+         text111.innerHTML="<h1>02.</h1>"
+         var text121=document.createElement('p')
+         text121.setAttribute('class','text121')
+         text121.innerHTML="<h2> Automated <br/> Reporting</h2>"
+         var text131=document.createElement('p')
+         text131.setAttribute('class','text131')
+         text131.innerHTML="Set your project milestones and Nifty will<br/> automate your progress reporting based on the <br/>completion of associated tasks."
+        var ug1=document.createElement('img')
+        ug1.setAttribute('class','ug1')
+        ug1.setAttribute('src','https://niftypm.com/_nuxt/img/large@2x.dfbc8bd.webp')
+        pp.append(text111,text121,text131,ug1)
+        secondDiv.append(pp)
+    })
     var btn3 = document.createElement("button")
     btn3.setAttribute("class", "orangeBtn3")
     var btnFoot3 = document.createElement("p")
@@ -569,120 +603,35 @@ function createClientPage(){
     btn3.addEventListener("mouseover", function(){
         btn3.style.backgroundColor = "rgb(248, 109, 109)"
         btnFoot3.style.color = "rgb(248, 109, 109)"
-    })
-
-    var orangeBtnsDiv = document.createElement("div")
-    orangeBtnsDiv.setAttribute("class","orangeBtnsDiv")
-
-    var btnsTextDiv = document.createElement("div")
-    btnsTextDiv.setAttribute("class","btnsTextDiv")
-
-    orangeBtnsDiv.append(btn1, btn2, btn3)
-    btnsTextDiv.append(btnFoot1, btnFoot2, btnFoot3)
-    secondDiv.append(orangeBtnsDiv, btnsTextDiv)
-    // clientParent.append(secondDiv)
-
-    //1st  orange button 
-    
-    var orangePage1 = document.createElement("div")
-    orangePage1.setAttribute("class", "orangePage1")
-
-    var orngSno = document.createElement("h1")
-    orngSno.setAttribute("class","orngSno")
-    orngSno.textContent = "01."
-
-    var orngHead1 = document.createElement("h3")
-    orngHead1.setAttribute("class","orngHead1")
-    orngHead1.textContent = "Streamlined"
-
-    var orngHead2 = document.createElement("h3")
-    orngHead2.setAttribute("class","orngHead2")
-    orngHead2.textContent = "Communication"
-
-    var orngPara1 = document.createElement("p")
-    orngPara1.setAttribute("class", "orngPara1")
-    orngPara1.textContent = "A Space for your team and client to share ideas,"
-
-    var orngPara2 = document.createElement("p")
-    orngPara2.setAttribute("class", "orngPara2")
-    orngPara2.textContent = "gather feedback, finalize specs and turn"
-
-    var orngPara3 = document.createElement("p")
-    orngPara3.setAttribute("class", "orngPara3")
-    orngPara3.textContent = "discussions into actions."
-
-    var orngTrial = document.createElement("p")
-    orngTrial.setAttribute("class", "orngTrial")
-    orngTrial.textContent = "Start Free Trial"
-
-    var orngImg1 = document.createElement("div")
-
-    var ornImg = document.createElement("img")
-    ornImg.setAttribute("src", "https://niftypm.com/_nuxt/img/large@1x.1450581.webp")
-    ornImg.setAttribute("class", "ornImg")
-
-    orngImg1.append(ornImg)
-
-    orangePage1.append(orngSno, orngHead1, orngHead2, orngPara1, orngPara2, orngPara3, orngTrial)
-    secondDiv.append(orangePage1, orngImg1)
-    clientParent.append(secondDiv)
-
-    //2nd orange button
-    function createPage2(){
-        var prevPage = document.querySelector(".orangePage1")
-        prevPage.style.display = "none"
-        var prevImg = document.querySelector(".ornImg")
-        prevImg.style.display = "none"
-
-        var orangePage2 = document.createElement("div")
-        orangePage2.setAttribute("class", "orangePage2")
-
-        var orngSno = document.createElement("h1")
-        orngSno.setAttribute("class","orngSno")
-        orngSno.textContent = "02."
-
-        var orngHead1 = document.createElement("h3")
-        orngHead1.setAttribute("class","orngHead1")
-        orngHead1.textContent = "Automated"
-
-        var orngHead2 = document.createElement("h3")
-        orngHead2.setAttribute("class","orngHead2")
-        orngHead2.textContent = "Reporting"
-
-        var orngPara1 = document.createElement("p")
-        orngPara1.setAttribute("class", "orngPara1")
-        orngPara1.textContent = "A Space for your team and client to share ideas,"
-
-        var orngPara2 = document.createElement("p")
-        orngPara2.setAttribute("class", "orngPara2")
-        orngPara2.textContent = "gather feedback, finalize specs and turn"
-
-        var orngPara3 = document.createElement("p")
-        orngPara3.setAttribute("class", "orngPara3")
-        orngPara3.textContent = "discussions into actions."
-
-        var orngTrial = document.createElement("p")
-        orngTrial.setAttribute("class", "orngTrial")
-        orngTrial.textContent = "Start Free Trial"
-
-        var orngImg1 = document.createElement("div")
-
-        var ornImg = document.createElement("img")
-        ornImg.setAttribute("src", "https://niftypm.com/_nuxt/img/large@1x.ba76fb1.webp")
-        ornImg.setAttribute("class", "ornImg")
-
-        orngImg1.append(ornImg)
-
-        orangePage2.append(orngSno, orngHead1, orngHead2, orngPara1, orngPara2, orngPara3, orngTrial)
-        secondDiv.append(orangePage2, orngImg1)
-        clientParent.append(secondDiv)
-
-    }
-    btn2.addEventListener("click", createPage2)
-    
-
-    
-    //logos part in clients page
+     })
+     btn3.addEventListener('click',function(){
+        text11.style.display='none'
+        text12.style.display='none'
+        text13.style.display='none'
+        ug.style.display='none'
+        var pp=document.getElementById("ppo")
+        pp.style.display='none'
+        var poc=document.createElement('div')
+        poc.setAttribute("id","poc")
+        var text111=document.createElement('h1')
+        text111.setAttribute('class','text111')
+        text111.innerHTML="<h1>03.</h1>"
+        var text121=document.createElement('p')
+        text121.setAttribute('class','text121')
+        text121.innerHTML="<h2> Centralized<br/> Deliverables</h2>"
+        var text131=document.createElement('p')
+        text131.setAttribute('class','text131')
+        text131.innerHTML="Share, store, and retrieve project assets to let<br/> your clients see and grab whatever they need<br/>without asking."
+       var ug1=document.createElement('img')
+       ug1.setAttribute('class','ug1')
+       ug1.setAttribute('src','https://niftypm.com/_nuxt/img/large@2x.c55d67f.webp')
+        poc.append(text111,text121,text131,ug1)
+       secondDiv.append(poc)
+   })
+    secondDiv.append(btn1, btn2, btn3,btnFoot1, btnFoot2, btnFoot3)
+     clientParent.append(secondDiv)
+     //1st  orange button 
+     //logos part in clients page
     var logosPart = document.getElementById("logosDiv")
     var logoHolder = document.createElement("div")
     logoHolder.setAttribute("class", "logos")
@@ -707,296 +656,283 @@ function createClientPage(){
 
     orange_logo_div.append(orng_logo, orng_logo_head, orng_logo_para)
     clientParent.append(orange_logo_div)
+    var stay=document.createElement('div')
+    stay.setAttribute('class','stay')
+    stay.innerHTML="<h2>Stay in Control</h2>"
+    var pr1=document.createElement('div')
+    pr1.setAttribute('class','pr1')
+    pr1.innerHTML="Hide specific internal conversations, tasks, and<br/>milestones from your clients to ensure they<br/>only see what you want them to see."
+    var ime1=document.createElement('div')
+    ime1.setAttribute("class","ime1")
+    ime1.innerHTML="<img src='https://niftypm.com/_nuxt/img/large@2x.0d93820.webp' alt=logo/>"
+    var stay1=document.createElement('div')
+    stay1.setAttribute('class','stay1')
+    stay1.innerHTML="<h2>Automate Progress <br/>Tracking</h2>"
+    var pr2=document.createElement('div')
+    pr2.setAttribute('class','pr2')
+    pr2.innerHTML="Automate your project's progress for clients to<br/> see based on the completion of connected <br/>tasks."
+    var ime2=document.createElement('div')
+    ime2.setAttribute("class","ime2")
+    ime2.innerHTML="<img src='https://niftypm.com/_nuxt/img/large@2x.55fa669.webp' alt=logo/>"
+    var stay2=document.createElement('div')
+    stay2.setAttribute('class','stay2')
+    stay2.innerHTML="<h2>Track Billable Hours</h2>"
+    var pr3=document.createElement('div')
+    pr3.setAttribute('class','pr3')
+    pr3.innerHTML="Record and export time spent on case efforts<br/> to easily stay on top of the managerial aspects<br/> of the case."
+    var ime3=document.createElement('div')
+    ime3.setAttribute("class","ime3")
+    ime3.innerHTML="<img src='https://niftypm.com/_nuxt/img/large@2x.55917e8.webp' alt=logo/>"
+    var stay3=document.createElement('div')
+    stay3.setAttribute('class','stay3')
+    stay3.innerHTML="<h2>Keep a Record</h2>"
+    var pr4=document.createElement('div')
+    pr4.setAttribute('class','pr4')
+    pr4.innerHTML="Keep track of all your interactions and<br/> deliverables with timestamps and activity logs<br/> on tasks to avoid any miscommunications."
+    var ime4=document.createElement('div')
+    ime4.setAttribute("class","ime4")
+    ime4.innerHTML="<img src='https://niftypm.com/_nuxt/img/large@2x.c55af29.webp' alt=logo/>"
+    var stay4=document.createElement('div')
+    stay4.setAttribute('class','stay4')
+    stay4.innerHTML="<h2>Streamline <br/>Responsibilities</h2>"
+    var pr5=document.createElement('div')
+    pr5.setAttribute('class','pr5')
+    pr5.innerHTML="Assign tasks to your clients to notify them<br/> about what's needed and by when to reduce <br/>unnecessary meetings and naggings."
+    var ime5=document.createElement('div')
+    ime5.setAttribute("class","ime5")
+    ime5.innerHTML="<img src='https://niftypm.com/_nuxt/img/large@2x.9e18a93.webp' alt=logo/>"
+    var stay5=document.createElement('div')
+    stay5.setAttribute('class','stay5')
+    stay5.innerHTML="<h2>Expedite Feedback <br/> Gathering</h2>"
+    var pr6=document.createElement('div')
+    pr6.setAttribute('class','pr6')
+    pr6.innerHTML="Engage in real-time discussions that travel<br/> with you on our mobile apps to speed up<br/> discussions and feedback gathering."
+    var ime6=document.createElement('div')
+    ime6.setAttribute("class","ime6")
+    ime6.innerHTML="<img src='https://niftypm.com/_nuxt/img/large@2x.04a1126.webp' alt=logo/>"
+    //var line=document.createElement('div')
+    //line.setAttribute('id','lq')
+    //line.innerHTML="<hr>"
+     var circle=document.createElement('div')
+        circle.setAttribute('class','ccl')
+     var heading=document.createElement('div')
+     heading.setAttribute('class','hdg')
+     heading.innerHTML="<h2>What teams say about Nifty</h2>"
+     var longdiv=document.createElement('div')
+     longdiv.setAttribute('class','long')
+     var d1=document.createElement('div')
+     d1.setAttribute('class','d1')
+     d1.innerHTML="Nifty is a product that excels in many client<br/>environments. Its ease of use makes it a powerful<br/> tool for managing our client portfolio.<br/><br/><br/><br/><h3>Stefan Schmidt</h3><p>Executive Partner, Hemmersbach<p/>"
+     var d2=document.createElement('div')
+     d2.setAttribute('class','d2')
+     d2.innerHTML="Nifty is by far the best productivity tool I've ever<br/> used. They have consolidated so many tools down to<br/> one for my team, without compromising the<br/> experience.<br/><br/><br/><h3>Rim N. Kay</h3><p>Engineering Lead, Emovis</p>"
+     var d3=document.createElement('div')
+     d3.setAttribute('class','d3')
+     d3.innerHTML="Nifty is the glue my business was missing. Its one<br/> tool that my product team, development team, and<br/> clients all use, and now everyone knows exactly<br/> where to look for updates.<br/><br/><br/><h3>Bhargav Patel</h3><p>Founder,IQM"
+     longdiv.append(d1,d2,d3)
+     var rm=document.createElement('div')
+     rm.setAttribute('class','rm')
+     rm.innerHTML="<a href='https://www.capterra.com/p/172519/Nifty/'>Read more reviews on Capterra  ></a>"
+     var picdiv=document.createElement('div')
+     picdiv.setAttribute('class','picdiv')
+     var dv1=document.createElement('img')
+     dv1.setAttribute('class','dv1')
+     dv1.setAttribute('src','https://images.g2crowd.com/uploads/report_medal/image/1248/medal.svg')
+     var dv2=document.createElement('img')
+     dv2.setAttribute('class','dv2')
+     dv2.setAttribute('src','https://images.g2crowd.com/uploads/report_medal/image/1239/medal.svg')
+     var dv3=document.createElement('img')
+     dv3.setAttribute('class','dv3')
+     dv3.setAttribute('src','https://images.g2crowd.com/uploads/report_medal/image/1279/medal.svg')
+     var dv4=document.createElement('img')
+     dv4.setAttribute('class','dv4')
+     dv4.setAttribute('src','https://images.g2crowd.com/uploads/report_medal/image/1276/medal.svg')
+     var dv5=document.createElement('img')
+     dv5.setAttribute('class','dv5')
+     dv5.setAttribute('src','https://images.g2crowd.com/uploads/report_medal/image/1236/medal.svg')
+     var dv6=document.createElement('img')
+     dv6.setAttribute('class','dv6')
+     dv6.setAttribute('src','https://my.g2.com/assets/product-badges/users-love-us-2008b519df49af90dcfa7db4b5fe13c8ec24ced0348f0a6bd039711ad8bbffc7.svg')
+     var bckcolor=document .createElement('div')
+     bckcolor.setAttribute('class','bckcolor')
+     var textcolor=document.createElement('div')
+     textcolor.setAttribute('class','textcolor')
+     textcolor.innerHTML="<h1>Switch to Nifty in minutes!</h1><p>Move your projects, team, tasks, and files from <strong>Asana, Basecamp,<br/> ClickUp, JIRA, Trello,</strong> or <strong>Wrike</strong> quickly and easily! Nifty allows your team<br/> to pick up right where you left off without missing a beat.</p><a href='https://nifty.pm/signup/email?_ga=2.249773254.1755110897.1607317473-617117086.1607317323'> Import projects now ></a>"
+     var imgcolor=document.createElement('img')
+     imgcolor.setAttribute('class','imgcolor')
+     imgcolor.setAttribute('src','https://niftypm.com/_nuxt/img/switch.14f27db.svg')
+     var colorbg=document.createElement('div')
+     colorbg.setAttribute('class','colorbg')
+     colorbg.innerHTML="<h1>Ready to transform your<br/>teamwork?</h1><p>Thousands of forward-thinking teams trust Nifty to unite their<br/> goals, actions, and communications in one collaborative hub.</p>"
+     var colorimg=document.createElement('img')
+     colorimg.setAttribute('class','colorimg')
+     colorimg.setAttribute('src','https://niftypm.com/_nuxt/img/large@2x.637a71d.webp')
+     var cb=document.createElement("button")
+     cb.setAttribute('id','cb')
+     cb.innerHTML="Try nifty for free"
+     var ipt=document.createElement('input')
+     ipt.setAttribute('placeholder','name@company.com')
+     ipt.setAttribute('class','ipt')
+     var fotter=document.createElement('div')
+     fotter.setAttribute('class','fotter')
+     var ft1=document.createElement('div')
+     ft1.setAttribute('class','ft1')
+     ft1.innerHTML="<h2>Product</h2><a href='https://niftypm.com/discussions'>Dicussions</a><br/><a href='https://niftypm.com/milestones'>Milestones</a><br/><a href='https://niftypm.com/tasks'>Task</a><br/><a href='https://niftypm.com/docs'>Docs & Files</a><br/><a href='https://niftypm.com/time-tracking'>Time tracking</a><br/><a href='https://niftypm.com/overview'>Reporting</a><br/><a href='https://niftypm.com/project-home'>Project Home</a><br/><a href='https://niftypm.com/portfolios'></a>"
+     var ft2=document.createElement('div')
+     ft2.setAttribute('class','ft2')
+     ft2.innerHTML="<h2>Resources</h2><a href='https://blog.niftypm.com/?_ga=2.101016257.1368079419.1606214564-1179758648.1606214564'>Blog</a><br/><a href='https://changelog.niftypm.com/?_ga=2.33882593.1368079419.1606214564-1179758648.1606214564'>Change Log</a><br/><a href='https://niftypm.com/integrations'>Integrations</a><br/><a href='https://niftypm.com/apps'>Apps</a><br/><a href='https://niftypm.com/pricing'>Pricing</a><br/><a href='https://niftypm.com/partners'>Affiliates</a>"
+     var ft3=document.createElement('div')
+     ft3.setAttribute('class','ft3')
+     ft3.innerHTML="<h2>Trust</h2><a href='https://help.niftypm.com/?_ga=2.34934241.1368079419.1606214564-1179758648.1606214564'>Help Centre</a><br/><a href='https://niftypm.com/privacy'>Privacy</a><br/><a href='https://niftypm.com/terms'>Terms of use</a><br/><a href='https://niftypm.com/security'>Security</a><br/><a href='https://status.niftypm.com/?_ga=2.265619151.1368079419.1606214564-1179758648.1606214564'>Status</a>"
+     var ft4=document.createElement('div')
+     ft4.setAttribute('class','ft4')
+     ft4.innerHTML="<h2>Made For</h2><a href='https://niftypm.com/case/agile-development'>Agille Development</a><br/><a href='https://niftypm.com/got-clients'>Client Management</a><br/><a href='https://niftypm.com/case/digital-agency-project-management-software'>Digital Agencies</a><br/><a href='https://niftypm.com/legal-case-management'>Legal Case Management</a><br/><a href='https://niftypm.com/case/marketing-and-communication'>Marketing Teams</a><br/><a href='https://niftypm.com/case/product-teams'>Product Teams</a>"
+     var ft5=document.createElement('div')
+     ft5.setAttribute('class','ft5')
+     ft5.innerHTML="<h2>Comparisons</h2><a href='https://niftypm.com/airtable-alternative'>Airtable Alternative</a><br/><a href='https://niftypm.com/asana-alternative'>Asana Alternative</a><br/><a href='https://niftypm.com/basecamp-alternative'>Basecamp Alternative</a><br/><a href='https://niftypm.com/clarizen-alternative'>Clarizen-Alternative</a><br/><a href='https://niftypm.com/clickup-alternative'>Click Up Alternative</a><br/><a href='https://niftypm.com/confluence-alternative'>Confluence Alternative</a><br/><a href='https://niftypm.com/flow-alternative'>Flow Alternative</a><br/><a href='https://niftypm.com/hive-alternative'>Hive Alternative</a><br/><a href='https://niftypm.com/jira-alternative'>Jira Alternative</a><br/><a href='https://niftypm.com/monday-alternative'>Monday.com Alternative</a>"
+     var ft6=document.createElement('div')
+     ft6.setAttribute('class','ft6')
+     ft6.innerHTML="<h3>From The Blog</h3><a href='https://blog.niftypm.com/why-project-management-is-broken-and-how-to-fix-it-b13b92eb33?_ga=2.54469096.1368079419.1606214564-1179758648.1606214564'>Why project management is broken.</a><br/><a href='https://blog.niftypm.com/remote-collaboration-is-more-than-just-communication-e0a69b3702a7?_ga=2.268783281.1368079419.1606214564-1179758648.1606214564'>Why Remote Collaboration is more than</a><br/><a href='https://blog.niftypm.com/how-to-improve-productivity-with-project-portfolio-management-ppm-6aa334139c77?_ga=2.30212863.1368079419.1606214564-1179758648.1606214564'>How to improve productivity</a><br/><a href='https://blog.niftypm.com/stay-on-top-of-your-workload-and-mental-health-with-a-time-tracker-dc95384c314d?_ga=2.100477278.1368079419.1606214564-1179758648.1606214564'>Staying on top of your workload</a><br/><a href='https://blog.niftypm.com/best-legal-case-management-software-for-law-firms-2ea3f47795ab?_ga=2.42568357.1887482352.1606216368-1179758648.1606214564'>Best Legal Case Management</a>"
+     fotter.append(ft1,ft2,ft3,ft4,ft5,ft6)
+     colorbg.append(colorimg,ipt,cb)
+     bckcolor.append(textcolor,imgcolor,colorbg,fotter)
+     picdiv.append(dv1,dv2,dv3,dv4,dv5,dv6)
+     clientParent.append(stay,pr1,ime1,stay1,pr2,ime2,stay2,pr3,ime3,stay3,pr4,ime4,stay4,pr5,ime5,stay5,pr6,ime6,circle,heading,longdiv,rm,picdiv,bckcolor)
+     }
 
-    //three consecutive blocks in down part
-    // var threeBlocks = document.querySelector(".blocks")
-    // var blocksPart = document.createElement("div")
-    // blocksPart.setAttribute("class","blocksPart")
-    // blocksPart.append(threeBlocks)
-    // clientParent.append(blocksPart)
-
-    //individual div 1
-    var indivDiv1 = document.createElement("div")
-    indivDiv1.setAttribute("class","indivDiv1")
-
-        var indiv1Text = document.createElement("div")
-        indiv1Text.setAttribute("class","indiv1Text")
-
-        var indiv1Head = document.createElement("h2")
-        indiv1Head.setAttribute("class","indiv1Head")
-        indiv1Head.textContent = "Stay in Control"
-
-        var indiv1Para1 = document.createElement("p")
-        indiv1Para1.setAttribute("class","indiv1Para1")
-        indiv1Para1.textContent = "Hide specific internal coversations,tasks and"
-        var indiv1Para2 = document.createElement("p")
-        indiv1Para2.setAttribute("class","indiv1Para2")
-        indiv1Para2.textContent = "milestones from your clients to ensure they only"
-        var indiv1Para3 = document.createElement("p")
-        indiv1Para3.setAttribute("class","indiv1Para3")
-        indiv1Para3.textContent = "see what you want them to see"
-
-        var indiv1Img = document.createElement("img")
-        indiv1Img.setAttribute("class","indiv1Img")
-        indiv1Img.setAttribute("src","https://niftypm.com/_nuxt/img/large@1x.e11831f.webp")
-
-    indiv1Text.append(indiv1Head, indiv1Para1, indiv1Para2, indiv1Para3)
-    indivDiv1.append(indiv1Text, indiv1Img)
-    clientParent.append(indivDiv1)
-
-    //individual div 2
-    var indivDiv2 = document.createElement("div")
-    indivDiv2.setAttribute("class","indivDiv2")
-
-        var indiv2Text = document.createElement("div")
-        indiv2Text.setAttribute("class","indiv2Text")
-
-        var indiv2Head = document.createElement("h2")
-        indiv2Head.setAttribute("class","indiv2Head")
-        indiv2Head.textContent = "Automate Progress "
-        var indiv2Head1 = document.createElement("h2")
-        indiv2Head1.setAttribute("class","indiv2Head1")
-        indiv2Head1.textContent = "Tracking"
-
-        var indiv2Para1 = document.createElement("p")
-        indiv2Para1.setAttribute("class","indiv2Para1")
-        indiv2Para1.textContent = "Automate your projects progress for clients to see"
-        var indiv2Para2 = document.createElement("p")
-        indiv2Para2.setAttribute("class","indiv2Para2")
-        indiv2Para2.textContent = "based on completion of connected tasks."
-
-        var indiv2Img = document.createElement("img")
-        indiv2Img.setAttribute("class","indiv2Img")
-        indiv2Img.setAttribute("src","https://niftypm.com/_nuxt/img/large@1x.e6ff289.webp")
-
-    indiv2Text.append(indiv2Head, indiv2Head1, indiv2Para1, indiv2Para2)
-    indivDiv2.append(indiv2Text, indiv2Img)
-    clientParent.append(indivDiv2)
-
-    //individual div 3
-    var indivDiv3 = document.createElement("div")
-    indivDiv3.setAttribute("class","indivDiv3")
-
-        var indiv3Text = document.createElement("div")
-        indiv3Text.setAttribute("class","indiv3Text")
-
-        var indiv3Head = document.createElement("h2")
-        indiv3Head.setAttribute("class","indiv3Head")
-        indiv3Head.textContent = " Track Billable Hours "
-        
-        var indiv3Para1 = document.createElement("p")
-        indiv3Para1.setAttribute("class","indiv3Para1")
-        indiv3Para1.textContent = "Record and export time spent on case efforts to"
-        var indiv3Para2 = document.createElement("p")
-        indiv3Para2.setAttribute("class","indiv3Para2")
-        indiv3Para2.textContent = "easily stay on top of the managerial aspects of the case."
-
-        var indiv3Img = document.createElement("img")
-        indiv3Img.setAttribute("class","indiv3Img")
-        indiv3Img.setAttribute("src","https://niftypm.com/_nuxt/img/large@1x.55917e8.webp")
-
-    indiv3Text.append(indiv3Head, indiv3Para1, indiv3Para2)
-    indivDiv3.append(indiv3Text, indiv3Img)
-    clientParent.append(indivDiv3)
-
-    //individual div 4
-    var indivDiv4 = document.createElement("div")
-    indivDiv4.setAttribute("class","indivDiv4")
-
-        var indiv4Text = document.createElement("div")
-        indiv4Text.setAttribute("class","indiv4Text")
-
-        var indiv4Head = document.createElement("h2")
-        indiv4Head.setAttribute("class","indiv4Head")
-        indiv4Head.textContent = " Keep a Record "
-        
-        var indiv4Para1 = document.createElement("p")
-        indiv4Para1.setAttribute("class","indiv4Para1")
-        indiv4Para1.textContent = "keep interactions of all your interactions and deliverables"
-        var indiv4Para2 = document.createElement("p")
-        indiv4Para2.setAttribute("class","indiv4Para2")
-        indiv4Para2.textContent = "withtime stamps and activity logoson tasks to avoid any miscommunication."
-
-        var indiv4Img = document.createElement("img")
-        indiv4Img.setAttribute("class","indiv4Img")
-        indiv4Img.setAttribute("src","https://niftypm.com/_nuxt/img/large@1x.68c2164.webp")
-
-    indiv4Text.append(indiv4Head, indiv4Para1, indiv4Para2)
-    indivDiv4.append(indiv4Text, indiv4Img)
-    clientParent.append(indivDiv4)
-
-    //individual div 5
-    var indivDiv5 = document.createElement("div")
-    indivDiv5.setAttribute("class","indivDiv5")
-
-        var indiv5Text = document.createElement("div")
-        indiv5Text.setAttribute("class","indiv5Text")
-
-        var indiv5Head = document.createElement("h2")
-        indiv5Head.setAttribute("class","indiv5Head")
-        indiv5Head.textContent = " Streamline Responsibilities "
-        
-        var indiv5Para1 = document.createElement("p")
-        indiv5Para1.setAttribute("class","indiv5Para1")
-        indiv5Para1.textContent = "Assign tasks to your clients to notify them about"
-        var indiv5Para2 = document.createElement("p")
-        indiv5Para2.setAttribute("class","indiv5Para2")
-        indiv5Para2.textContent = "what's needed and by when to reduce unnecessary meetings and naggings."
-
-        var indiv5Img = document.createElement("img")
-        indiv5Img.setAttribute("class","indiv5Img")
-        indiv5Img.setAttribute("src","https://niftypm.com/_nuxt/img/large@1x.37ccc78.webp")
-
-    indiv5Text.append(indiv5Head, indiv5Para1, indiv5Para2)
-    indivDiv5.append(indiv5Text, indiv5Img)
-    clientParent.append(indivDiv5)
-
-    //yellow icon with text
-    var yelloParent = document.createElement("div")
-    yelloParent.setAttribute("class","yelloParent")
-
-    var yellow_logo = document.createElement("p")
-    yellow_logo.setAttribute("class","yellow_logo")
-    
-    var yellow_logo_text = document.createElement("h2")
-    yellow_logo_text.setAttribute("class","yellow_logo_text")
-    yellow_logo_text.textContent = "What teams say about Nifty..."
-
-    yelloParent.append(yellow_logo, yellow_logo_text)
-    clientParent.append(yelloParent)
-
-    //3 blocks part
-    var three_blocks = document.createElement("div")
-    three_blocks.setAttribute("class","three_blocks")
-
-    //block1
-    var block_1 = document.createElement("div")
-    block_1.setAttribute("class","block_1")
-
-    var block1_text = document.createElement("p")
-    block1_text.setAttribute("class","block1_text")
-    block1_text.textContent = "Nifty is the glue my business was missing. Its one tool that my product team, development team, and clients all use, and now everyone knows exactly where to look for updates."
-    
-    var block1_foot1 = document.createElement("h4")
-    block1_foot1.setAttribute("class","block1_foot1")
-    block1_foot1.textContent = "Bhargav Patel"
-    var block1_foot2 = document.createElement("p")
-    block1_foot2.setAttribute("class","block1_foot2")
-    block1_foot2.textContent = "Founder, IQM"
-
-    block_1.append(block1_text, block1_foot1, block1_foot2)
-    
-    //block2
-    var block_2 = document.createElement("div")
-    block_2.setAttribute("class","block_2")
-
-    var block2_text = document.createElement("p")
-    block2_text.setAttribute("class","block1_text")
-    block2_text.textContent = "Nifty is a product that excels in many client environments. Its ease of use makes it a powerful tool for managing our client portfolio."
-    
-    var block2_foot1 = document.createElement("h4")
-    block2_foot1.setAttribute("class","block1_foot1")
-    block2_foot1.textContent = "Stefan Schimidt"
-    var block2_foot2 = document.createElement("p")
-    block2_foot2.setAttribute("class","block1_foot2")
-    block2_foot2.textContent = "Executive Partner, Hemmersbach"
-
-    block_2.append(block2_text, block2_foot1, block2_foot2)
-
-    //block3
-    var block_3 = document.createElement("div")
-    block_3.setAttribute("class","block_3")
-
-    var block3_text = document.createElement("p")
-    block3_text.setAttribute("class","block1_text")
-    block3_text.textContent = "Nifty is by far the best productivity tool I've ever used. They have consolidated so many tools down to one for my team, without compromising the experience."
-    
-    var block3_foot1 = document.createElement("h4")
-    block3_foot1.setAttribute("class","block1_foot1")
-    block3_foot1.textContent = "Rim N. Kay"
-    var block3_foot2 = document.createElement("p")
-    block3_foot2.setAttribute("class","block1_foot2")
-    block3_foot2.textContent = "Engineering Lead, Emovis"
-
-    block_3.append(block3_text, block3_foot1, block3_foot2)
-
-    three_blocks.append(block_1, block_2, block_3)
-    clientParent.append(three_blocks)
-
-    //clients page bottom part
-
-    var client_bottom_div = document.createElement("div")
-    client_bottom_div.setAttribute("class","clientbot_div")
-
-    //text
-    var text_div = document.createElement("div")
-    text_div.setAttribute("class","text_div")
-
-    var text_div_h2 = document.createElement("h1")
-    text_div_h2.setAttribute("class","text_h2")
-    text_div_h2.textContent = "Switch to nifty in minutes!"
-
-    var text_div_para = document.createElement("p")
-    text_div_para.setAttribute("class","text_p")
-    text_div_para.textContent = "Move your projects, team, tasks, and files from Asana, Basecamp, ClickUp, JIRA, Trello, or Wrike quickly and easily! Nifty allows your team to pick up right where you left off without missing a beat."
-
-    var text_div_foot = document.createElement("h4")
-    text_div_foot.setAttribute("class","text_foot")
-    text_div_foot.textContent = "Import Projects Now >"
-
-    text_div.append(text_div_h2, text_div_para, text_div_foot)
-
-    //img logo
-    var img_div = document.createElement("div")
-    img_div.setAttribute("class","img_div")
-
-    var img_logo = document.createElement("img")
-    img_logo.setAttribute("src","https://niftypm.com/_nuxt/img/switch.14f27db.svg")
-    img_logo.setAttribute("class","img_logo")
-
-    img_div.append(img_logo)
-
-    client_bottom_div.append(text_div, img_div)
-    clientParent.append(client_bottom_div)
-
-    //colored background and img
-    var color_back = document.createElement("div")
-    color_back.setAttribute("class","color_back")
-
-    //text
-    var clr_text = document.createElement("div")
-    clr_text.setAttribute("class","clr_text")
-
-    clrtxt_h1 = document.createElement("h2")
-    clrtxt_h1.setAttribute("class","clrtxt_h1")
-    clrtxt_h1.textContent = "Ready to transform your"
-    clrtxt_h2 = document.createElement("h2")
-    clrtxt_h2.setAttribute("class","clrtxt_h2")
-    clrtxt_h2.textContent = "teamwork?"
-
-    clrtxt_p = document.createElement("p")
-    clrtxt_p.setAttribute("class","clrtxt_p")
-    clrtxt_p.textContent = "Thousands of forward-thinking teams trust Nifty to unite their goals, actions, and communications in one collaborative hub."
-
-    clrtxt_b1 = document.createElement("h3")
-    clrtxt_b1.setAttribute("class","clrtxt_b1")
-    clrtxt_b1.textContent = "Try Nifty for Free"
-    clrtxt_b2 = document.createElement("h3")
-    clrtxt_b2.setAttribute("class","clrtxt_b2")
-    clrtxt_b2.textContent = "Get a Demo"
-
-    clr_text.append(clrtxt_h1, clrtxt_h2, clrtxt_p, clrtxt_b1, clrtxt_b2)
-    color_back.append(clr_text)
-
-    //img
-    var clr_img = document.createElement("img")
-    clr_img.setAttribute("src","https://niftypm.com/_nuxt/img/large@1x.1450581.webp")
-    clr_img.setAttribute("class","clr_img")
-
-    color_back.append(clr_img)
-
-    client_bottom_div.append(color_back)
-    clientParent.append(client_bottom_div)
-
-}
 clientBtn.addEventListener("click", createClientPage)
+
+//pricing page
+function pricingPage(){
+    var firstCont = document.querySelector(".firstContainerLeftDown")
+    var googleBox = document.querySelector(".googleBox")
+    var firstLeftImg = document.querySelector(".firstLeftImg")
+    var firstRightImg = document.querySelector(".firstRightImg")
+    var violetBtnHldr = document.querySelector("#violetBtnsHolder")
+    var btnDiv = document.querySelector(".buttonsDiv")
+    var violetBtnItms = document.querySelector("#violetBtnItems")
+    var pageImg = document.querySelector(".pageImg")
+    var firstParnt = document.querySelector("#firstParent")
+    var yelloLogo = document.querySelector(".cl1")
+    var threeBlocks = document.querySelector(".blocks")
+    var main_class = document.querySelector(".main")
+    var main1_class = document.querySelector(".main1")
+    var logos = document.getElementById("logosDiv")
+
+    logos.style.display = "none"
+    firstCont.style.display = "none"
+    googleBox.style.display = "none"
+    firstLeftImg.style.display = "none"
+    violetBtnHldr.style.display = "none"
+    btnDiv.style.display = "none"
+    violetBtnItms.style.display = "none"
+    pageImg.style.display = "none"
+    firstParnt.style.display = "none"
+    yelloLogo.style.display = "none"
+    threeBlocks.style.display = "none"
+    main_class.style.display = "none"
+    main1_class.style.display = "none"
+    var pp=document.getElementById("pp")
+    var ht=document.createElement('div')
+    ht.innerHTML="<h1>Simple Pricing.</h1>I need nifty for <input type=number id='ipt1'/> users, billed"
+    ht.setAttribute('class','ht')
+    var ht1=document.createElement('div')
+    ht1.setAttribute('class','ht1')
+    ht1.innerHTML="<select ><option value=annually>Annuall</option> <option value=monthly>monthly</option></select>"
+    var leftDiv1=document.createElement('div')
+    leftDiv1.setAttribute('class','leftDiv1')
+    leftDiv1.innerHTML="<ul> <li>Upgrade, downgrade,<br/> or cancel anytime.</li><br/> <li>7-day free trial.</li> <br/> <li>No credit card required.</li></ul>"
+    var parent1=document.createElement('div')
+    parent1.setAttribute('class','parent1')
+    var starter=document.createElement('div')
+    starter.setAttribute('class','starter')
+    starter.innerHTML="<h3>Starter</h3>Includes all the core features.<br/>Basic to get you started."
+    var starter1=document.createElement('div')
+    starter1.setAttribute('id','starter1')
+    starter1.innerHTML="<p>$39<br/> per month billed annually</p><p><u>Get Started</u></p><hr><br><a>10<br><br>100 GB<br><br>10<br><br>Unlimited<br><br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br><br>+$20/mo<br><br>+$20/mo<br><br>+$20/mo<br><br><br><br><br><br><br><br><br>&#x2714<br><br><br><br><br><br><br><br><br><br><br><br>&#x2714</a><br><br><br><br><br><br><br><p><u>Get Started</u></p>"
+    starter.append(starter1)
+    var pro=document.createElement('div')
+    pro.setAttribute('class','pro')
+    pro.innerHTML="<h3>Pro</h3>Step up with our pro features.<br/> Simple yet powerful."
+    var pro1=document.createElement('div')
+    pro1.setAttribute('id','pro1')
+    pro1.innerHTML="<p>$79<br/>per month, billed annually</p><p><u>Get Started</u></p><hr><br><a>20<br><br>500 GB<br><br>Unlimited<br><br>Unlimited<br><br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br><br>&#x2714<br><br>+$20/mo<br><br>+$20/mo<br><br>&#x2714<br><br><br><br><br><br>&#x2714<br><br><br><br><br><br><br><br><br><br><br><br><br>&#x2714</a><br><br><br><br><br><br><br><p><u>Get Started</u></p>"
+    //var pro2=document.createElement('div')
+    //pro2.setAttribute('id','pro2')
+   // pro2.innerHTML="20"
+    pro.append(pro1)
+    var business=document.createElement('div')
+    business.setAttribute('class','business')
+    business.innerHTML="<h3>Business</h3>For ultimate team productivity.<br/> Access to power features."
+    var business1=document.createElement('div')
+    business1.setAttribute('id','business1')
+    business1.innerHTML="<p>$124<br/>per month, billed annually</p><p><u>Get Started</u></p><hr><br><a>30<br><br>1TB<br><br>Unlimited<br><br>Unlimited<br><br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br><br><br>&#x2714<br><br>&#x2714<br><br><br><br><br><br><br><br><br><br>&#x2714<br><br>&#x2714</a><br><br><br><br><br><p><u>Get Started</u></p>"
+    business.append(business1)
+    var enterprise=document.createElement('div')
+    enterprise.setAttribute('class','enterprise')
+    enterprise.innerHTML="<h3>Enterprise</h3>A fully customizable solution<br/> for the most advanced teams.<p>Contact <br/>for custom quote</p><p><u>Contact Us</u></p><hr><br>Unlimited<br><br>Custom<br><br>Unlimited<br><br>Unlimited<br><br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br><br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br><br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br><p><u>Contact Us</u></p>"
+    parent1.append(starter,pro,business,enterprise)
+    
+    ht1.addEventListener("click",function(){
+      starter1.innerHTML="<p>$49<br/> per month,billed monthly</p><p><u>Get Started<u/></p><hr><br><a>10<br><br>100 GB<br><br>10<br><br>Unlimited<br><br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br><br>+$20/mo<br><br>+$20/mo<br><br>+$20/mo<br><br><br><br><br><br><br><br><br>&#x2714<br><br><br><br><br><br><br><br><br><br><br><br>&#x2714</a>"
+     pro1.innerHTML="<p>$99<br/> per month,billed monthly</p><p><u>Get Started<u/></p><hr><br><a>20<br><br>500 GB<br><br>Unlimited<br><br>Unlimited<br><br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br><br>&#x2714<br><br>+$20/mo<br><br>+$20/mo<br><br>&#x2714<br><br><br><br><br><br>&#x2714<br><br><br><br><br><br><br><br><br><br><br><br><br>&#x2714</a>"
+      business1.innerHTML="<p>$149<br/> per month,billed monthly</p><p><u>Get Started<u/></p><hr><br><a>30<br><br>1TB<br><br>Unlimited<br><br>Unlimited<br><br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br><br><br>&#x2714<br><br>&#x2714<br><br><br><br><br><br><br><br><br><br>&#x2714<br><br>&#x2714</a>"
+      enterprise.innerHTML="<h3>Enterprise</h3>A fully customizable solution<br/> for the most advanced teams.<p>Contact <br/>for custom quote</p><p><u>Contact Us</u></p><hr><br>Unlimited<br><br>Custom<br><br>Unlimited<br><br>Unlimited<br><br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br><br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br><br><br>&#x2714<br><br>&#x2714<br><br>&#x2714</a>"
+     ht1.innerHTML="monthly &#x2B07"
+     ht1.addEventListener('dblclick',function(){
+         ht1.innerHTML="annually"
+         starter1.innerHTML="<p>$39<br/> per month billed annually</p><p><u>Get Started</u></p><hr><br><a>10<br><br>100 GB<br><br>10<br><br>Unlimited<br><br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br><br>+$20/mo<br><br>+$20/mo<br><br>+$20/mo<br><br><br><br><br><br><br><br><br>&#x2714<br><br><br><br><br><br><br><br><br><br><br><br>&#x2714</a>"
+         pro1.innerHTML="<p>$79<br/>per month, billed annually</p><p><u>Get Started</u></p><hr><br><a>20<br><br>500 GB<br><br>Unlimited<br><br>Unlimited<br><br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br><br>&#x2714<br><br>+$20/mo<br><br>+$20/mo<br><br>&#x2714<br><br><br><br><br><br>&#x2714<br><br><br><br><br><br><br><br><br><br><br><br><br>&#x2714</a>"
+         business1.innerHTML="<p>$124<br/>per month, billed annually</p><p><u>Get Started</u></p><hr><br><a>30<br><br>1TB<br><br>Unlimited<br><br>Unlimited<br><br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br><br><br>&#x2714<br><br>&#x2714<br><br><br><br><br><br><br><br><br><br>&#x2714<br><br>&#x2714</a>"
+         enterprise.innerHTML="<h3>Enterprise</h3>A fully customizable solution<br/> for the most advanced teams.<p>Contact <br/>for custom quote</p><p><u>Contact Us</u></p><hr><br>Unlimited<br><br>Custom<br><br>Unlimited<br><br>Unlimited<br><br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br><br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br>&#x2714<br><br><br><br>&#x2714<br><br>&#x2714<br><br>&#x2714"
+         })
+    })
+    var be=document.createElement('div')
+    be.setAttribute('class','be')
+    be.innerHTML="<h3>Business Essential</h3>Team Members<br><br>Storage Space<br><br>Active Projects<br><br>Guest and Clients<br>"
+    var cf=document.createElement('div')
+    cf.setAttribute('class','cf')
+    cf.innerHTML="<h3>Core Features</h3>Task<br><br>Milestone<br><br>Discussion<br><br>Docs<br><br>Files<br><br>Team Chat<br><br>Portfolios<br><br>Recurring Tasks<br><br>Task Dependencies<br><br>Milestone Dependencies"
+    var aft=document.createElement('div')
+    aft.setAttribute('class','aft')
+    aft.innerHTML="<h3>Advance Features</h3>Cross-Project Overviews<br><br>Team Workloads<br><br>Time Tracking & Reporting<br><br>Custom Fields<br><br>Budget Tracking"
+     var ah=document.createElement('div')
+     ah.setAttribute('class','ah')
+     ah.innerHTML="<h3>Account & Hosting</h3>Google Single Sign-On (SSO)<br><br>Open API<br><br>Microsoft SSO<br><br>Microsoft Active Directory<br><br>Custom SAML (SSO)"
+     var s=document.createElement('div')
+     s.setAttribute('class','s')
+     s.innerHTML="<h3>Support</h3>Self-Serve Help Center<br><br>Priority Support<br><br>Dedicated Success Manager"
+     var clgm=document.createElement('div')
+     clgm.setAttribute('class','clgm')
+     var clg=document.createElement('div')
+     clg.setAttribute('class','clg')
+     clg.innerHTML="<h2> &#x2764 Trusted by</h2>"
+     var clg1=document.createElement('img')
+     clg1.setAttribute('class','clg1')
+     clg1.setAttribute('src','https://niftypm.com/_nuxt/img/logo-apple.90494dc.svg')
+     var clg2=document.createElement('img')
+     clg2.setAttribute('class','clg2')
+     clg2.setAttribute('src','https://niftypm.com/_nuxt/img/logo-verizon.9e31975.svg')
+     var clg3=document.createElement('img')
+     clg3.setAttribute('class','clg3')
+     clg3.setAttribute('src','https://niftypm.com/_nuxt/img/logo-pd.2e75b01.svg')
+     var clg4=document.createElement('img')
+     clg4.setAttribute('class','clg4')
+     clg4.setAttribute('src','https://niftypm.com/_nuxt/img/logo-emovis.1bc45e8.svg')
+     var clg5=document.createElement('img')
+     clg5.setAttribute('class','clg5')
+     clg5.setAttribute('src','https://niftypm.com/_nuxt/img/logo-vmware.61e07e9.svg')
+     var clg6=document.createElement('img')
+     clg6.setAttribute('class','clg6')
+     clg6.setAttribute('src','data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAwMCIgaGVpZ2h0PSI0MDAiPgogIDxjbGlwUGF0aCBpZD0iYiI+CiAgICA8cGF0aCBkPSJNMC0xdjgzaDU1LjkzN3YyMzZIMS41MjN2ODJoMTk0LjY1di04MmgtNTUuOTM4VjgyaDU0LjQxNFYtMXptNTU0LjAyIDF2ODJoNTUuOTM4djIzNmgtNTQuNDE0djgyaDEzOC43MVYxNzEuODRsODIuNjU2IDIyOC4wOCAxLjY4LjA0IDgxLjE3Mi0yMjguMTJWNDAwaDE0MC4yM3YtODJoLTU1LjkzOFY4Mmg1NC40MTVWMGgtMTU2LjMzbC02NC43MjYgMTgyLjg5TDcxMS44NjYgMHoiLz4KICAgIDxwYXRoIGlkPSJhIiBkPSJNMjIyLjIzIDB2ODJoNTUuOTM3djEzMGgyMTUuMzF2LTI0LjkyOHMxOC4wMTEtMTQuMDQyIDIzLjc1LTI3LjM2N2wxMS41MjMtMjUuODU1czUuMzUyLTE0LjQ3MiA1LjM1Mi0yNy40MDVsLTIuMzA1LTI1Ljg1NXMtMy42MTYtMjEuMDYzLTkuOTIyLTI3LjMyOGwtMjIuMjY2LTI1Ljg5NVM0NzEuMjc2IDAgNDMzLjc1IDB6bTE0MC4yMyA4Mmg4MS45OTJ2NzZIMzYyLjQ2eiIvPgogICAgPHVzZSB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAwIDQwMCkiIHhsaW5rOmhyZWY9IiNhIi8+CiAgPC9jbGlwUGF0aD4KICA8cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiMzYTNhM2EiIHN0cm9rZS13aWR0aD0iMjcuMzciIGQ9Ik0wIDEzLjY4M2gxMDMwdjUzLjIzMkgwbTAgNTMuMjMyaDk3NXY1My4yNDJIMHY1My4yMjJoOTc1djUzLjIyMkgwbTAgNTMuMjQyaDEwMzB2NTMuMjQySDAiIGNsaXAtcGF0aD0idXJsKCNiKSIvPgo8L3N2Zz4K')
+     var clg7=document.createElement('img')
+     clg7.setAttribute('class','clg7')
+     clg7.setAttribute('src','https://niftypm.com/_nuxt/img/logo-loreal.f0acb48.svg')
+     var clg8=document.createElement('img')
+     clg8.setAttribute('class','clg8')
+     clg8.setAttribute('src','data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4OC4yIDMwLjEiPgogIDxwYXRoIGZpbGw9IiMzYTNhM2EiIGQ9Ik0zNy45IDYuN2gzLjVsOCAxMC41VjYuN2gzLjd2MTdoLTMuMmwtOC4zLTEwLjh2MTAuOGgtMy43di0xN3pNNjEuNSAxN0w1NC45IDYuN2g0LjRsNC4xIDYuOCA0LjEtNi44aDQuM2wtNi41IDEwLjJ2Ni44aC0zLjdWMTd6bTExLjktLjZWNi43aDMuN3Y5LjZjMCAyLjggMS40IDQuMiAzLjcgNC4yIDIuMyAwIDMuNy0xLjQgMy43LTQuMVY2LjdoMy43djkuNmMwIDUuMi0yLjkgNy43LTcuNSA3LjdzLTcuMy0yLjYtNy4zLTcuNm0tNjAtLjdjLTMuMS0xLjgtMi44LTQuNS0xLjUtNi40di0uMmMtLjEtLjUtLjYtMS42LS44LTEuOS0uMS0uMS0uMS0uMS0uMSAwIDAgLjUtLjYgMS44LTEuNSAzLjMtMSAxLjctMSA1LjIgMy45IDUuMiAwIC4xIDAgMCAwIDBtLjgtLjFjLTEuOC0zLjkgMS44LTYuNSAyLjQtNyAuMS0uMS4xLS4xLjEtLjIgMC0xLjItLjctMy4yLS45LTMuNWgtLjFjLS4zIDEuMi0yIDMtMi4zIDMuNC0yLjkgMy4zLTIuMiA1LjQuOCA3LjMgMCAuMSAwIDAgMCAwbS42LS4yYy45LTQuMiA0LjMtNC4zIDQuNi01LjEuNS0xLjItLjQtMy40LS42LTMuN2gtLjFjLS41IDEtMS4yIDItMS44IDIuNC0uNy43LTMuNyAyLjktMi4xIDYuNC0uMS4xIDAgLjEgMCAwbS42LjRjNS41LjIgNS45LTQuOCA1LjktNi43IDAtLjEtLjEtLjEtLjEgMC0uMi40LS45IDEuOC0yLjkgMi42LTEuNy44LTIuOCAyLjUtMi45IDQuMS0uMSAwIDAgMCAwIDBtMS4yLjZoLTQuM3YxLjNoNC4zdi0xLjN6bS0yLjUgMTAuMmMwIC4yLjUuMy42IDBsMS04LjNoLTIuNWwuOSA4LjN6bTE2IDMuNUguMVYuMWgzMHYzMHoiLz4KPC9zdmc+Cg==')
+     clgm.append(clg1,clg2,clg3,clg4,clg5,clg6,clg7,clg8,clg)
+     pp.append(ht,leftDiv1,parent1,ht1,be,cf,aft,ah,s,clgm)
+}
+var pricing=document.getElementById('pricingBtn')
+pricing.addEventListener('click',pricingPage)
