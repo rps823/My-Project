@@ -1,21 +1,17 @@
 #topBar{
-    position: -webkit-sticky;
-    position: sticky;
     top: 0px;
     height: 60px;
-    width: 1500px;
-    /* border: 1px solid black; */
-    background-color: white;
+    width: 1230px;
+    border: 2px solid white;
     margin: 20px 0px 10px 0px;
-    
-}
+    }
 #topBar > img{
     margin-left: 200px;
     width: 80px;
     position: absolute;
     left: 0px;
-    top: -18px;
-    margin-top: 20px;
+    top: 20px;
+    margin-top: 2px;
 }
 #topBar > button{
     width: 100px;
@@ -34,7 +30,7 @@
     border-radius: 8px;
 }
 .loginBtn{
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 #firstContainer{
@@ -127,27 +123,30 @@
 }
 
 .firstLeftImg{
-    width: 60px;
-    position: absolute;
-    left: 780px;
-    top: 110px;
-    margin-top: 10px;
+      position: absolute;
+      left: 780px;
+      top: 110px;
+      margin-top: 10px;
+      width: 37%;
 }
-.firstRightImg{
-    width: 50px;
-    position: absolute;
-    left: 1350px;
-    top: 480px;
+.firstLeftImg>img{
+    width: 93%;
 }
-
+/*.violetBtnsHolder{
+    background-color:blue;
+}
+.violetBtnItems{
+    background-color: darkgoldenrod;
+}*/
 #logosDiv{
     position: absolute;
     top: 700px;
     left: 100px;
+    width:90%;
 }
 .logoParentDiv{
     /* border: 1px solid black; */
-    width: 1100px;
+    width: 1050px;
     height: 150px;
     margin: 10px 20px 0px 100px;
 }
@@ -166,7 +165,31 @@
     color: rgb(212, 139, 3);
     text-align: center;
 }
+.pageImg8{
+    width: 190%;
+    position: absolute;
+    left: 120%;
+    top:-10%;
+}
+.pageImg9{
+    width: 205%;
+    position: absolute;
+    left: 120%;
+    top:-10%;
+}
 
+.pageImg{
+    width: 172%;
+    position: absolute;
+    left: 120%;
+    top:-10%;
+}
+.pageImg1{
+    width: 145%;
+    position: absolute;
+    left: 120%;
+    top:-10%; 
+}
 /*Rudra Pratap Singh */
 .cl1{
     position: absolute;
@@ -175,16 +198,15 @@
     width: 97%;
     height:35%;
     font-family: sans-serif;
-    
-}
+    }
 .circle{
     width:60px;
     height: 60px;
     border-radius: 30px;
-    background-color: yellow;
     position: absolute;
     left:45%;
-    top:20%;
+    top:15%;
+    background-color: yellow;
 }
 .heading{
     position: absolute;
@@ -246,7 +268,6 @@
     top: 2350px;
     width: 97%;
     height: 35%;
-
 }
 .link>a{
     position: absolute;
@@ -261,19 +282,17 @@
     left:30%;
     top:28%;
 }
-
 .image1>img{
     width: 20%;
-    height: 20%;
-}
+   }
 .main1{
     position: absolute;
     left:0px;
     top: 2500px;
     width: 98%;
     height: 44%;
-    
 }
+
 .image2{
     position: absolute;
     left:33%;
@@ -282,7 +301,7 @@
 }
 .image2>img{
     width: 20%;
-    height: 30%;
+    
 }
 
 .coloredblock{
@@ -308,8 +327,7 @@
     top:18%;
 }
 .setofimage>img{
-    width: 70%;
-    height: 80%;
+    width: 80%;
 }
 .text1{
     position: absolute;
@@ -395,7 +413,7 @@
     left:5%;
     bottom:-500%;
     background-color: rgba(9, 161, 161, 0.753);
-    width: 90%;
+    width: 95%;
     height: 500px;
     border-radius: 2%;
 }
@@ -407,11 +425,10 @@
 .a3{
     position: absolute;
     left:50%;
-    top:12%;
+    top:11%;
 }
 .a3>img{
-    width: 85%;
-    height: 30%;
+    width: 99%;
 }
 #id2{
     background-color: orange;
@@ -483,7 +500,7 @@ font-weight: bold;
     position: absolute;
     left: -80px;
     top: 180px;
-    width: 1200px;
+    width: 1130px;
     /* justify-content: center; */
 }
 .buttonsDiv > button{
@@ -641,6 +658,7 @@ font-weight: bold;
     width: 50%;
     height: 18%;
     }
+    /*got clients page*/
 .firstDiv{
     text-align: center;
     /* border: 1px solid black; */
@@ -703,53 +721,78 @@ font-weight: bold;
     height: 880px;
     padding-top: 40px;
     background-color: rgba(209, 204, 204, 0.185);
+    position: relative;
 }
 .orangeBtn1{
     height: 40px;
     width: 40px;
     border-radius: 20px;
     border: 0px;
-    /* background-color: rgb(248, 109, 109); */
-    margin-left: 500px;
-    /* float: left; */
+    position: absolute;
+    top: 10%;
+    left: 25%;
 }
 .orangeBtn2{
     height: 40px;
     width: 40px;
     border-radius: 20px;
     border: 0px;
-    /* background-color: rgb(248, 109, 109); */
-    margin-left: 180px;
-    /* float: left; */
+    position: absolute;
+    top: 10%;
+    left: 45%;
 }
 .orangeBtn3{
     height: 40px;
     width: 40px;
     border-radius: 20px;
     border: 0px;
-    /* background-color: rgb(248, 109, 109); */
-    margin-left: 180px;
-    /* float: left; */
+    position: absolute;
+    top: 10%;
+    left: 65%;
 }
 .btnFoot1{
     font-size: 10px;
-    float: left;
-    margin-left: 435px;
-    font-weight: 550;
-    /* color: rgb(248, 109, 109); */
+   position:absolute;
+   font-weight: 550;
+    top:16%;
+    left: 24%;
 }
 .btnFoot2{
     font-size: 10px;
-    float: left;
-    margin-left: 75px;
+   position:absolute;
     font-weight: 550;
+    top:16%;
+    left: 44%;
 }
 .btnFoot3{
     font-size: 10px;
-    float: left;
-    margin-left: 80px;
-    font-weight: 550;
+   position:absolute;
+   font-weight: 550;
     margin-bottom: 60px;
+    top:16%;
+    left: 64%;
+}
+.text11, .text12, .text13, .text111, .text121, .text131 {
+   position: absolute;
+   left: 18%;
+}
+.text11, .text111 {
+top: 21%;
+color: lightcoral;
+}
+.text12, .text121 {
+    top: 32%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text13, .text131 {
+    top: 42%;
+    line-height: 22px;
+}
+.ug, .ug1 {
+    width: 50%;
+    position: absolute;
+    top: 23%;
+    left: 45%;
 }
 .logos{
     position: absolute;
@@ -760,13 +803,13 @@ font-weight: bold;
     margin: 80px 50px 0px 300px;
     /* border: 1px solid black; */
     width: 350px;
-    float: left;
+   position:absolute;
 }
 .orangePage2{
     margin: 80px 50px 0px 300px;
     /* border: 1px solid black; */
     width: 350px;
-    float: left;
+   position:absolute;
 }
 .orangePage3{
     margin: 80px 50px 0px 300px;
@@ -776,6 +819,7 @@ font-weight: bold;
 }
 .orngImg1{
     width: 80px;
+    
     float: left;
     border-radius: 5px;
 }
@@ -835,57 +879,6 @@ font-weight: bold;
 }
 .orng_para{
     font-size: 22px;
-}
-.indivDiv1{
-    height: 250px;
-    margin-top: 100px;
-    /* border: 1px solid black; */
-}
-.indiv1Text{
-    /* border: 1px solid black; */
-    width: 400px;
-    font-family: sans-serif;
-    float: left;
-    margin: 50px 60px 0px 200px;
-}
-.indiv1Para1, .indiv1Para2, .indiv1Para3{
-    line-height: 5px;
-}
-.indiv1Img{
-    float: left;
-    width: 400px;
-    margin: 5px 0px 0px 100px;
-    background-size: 500px 200px;
-    background-image: url("https://static5.depositphotos.com/1008855/444/i/600/depositphotos_4446869-stock-photo-white-flower-background.jpg");
-}
-
-.indivDiv2{
-    height: 250px;
-    margin-top: 100px;
-    /* border: 1px solid black; */
-}
-.indiv2Text{
-    float: right;
-    /* border: 1px solid black; */
-    margin: 65px 250px 0px 40px;
-}
-.indiv2Img{
-    float: right;
-    width: 700px;
-    margin-right: 0px;
-    margin-top: 5px;
-    background-image: url("https://static5.depositphotos.com/1008855/444/i/600/depositphotos_4446869-stock-photo-white-flower-background.jpg");
-}
-.indiv2Head, .indiv2Head1{
-    line-height: 5px;
-    font-family: sans-serif;
-}
-.indiv2Para1, .indiv2Para2{
-    line-height: 5px;
-    font-family: sans-serif;
-}
-.indiv2Para1{
-    margin-top: 30px;
 }
 /* rudra code */
 .login{
@@ -1199,4 +1192,403 @@ font-size:x-large;
     color: white;
     background-color: orange;
     margin: 15px 0px 0px 5px;
+}
+.stay, .pr1, .stay2, .pr3{
+    position: absolute;
+    left: 12%;
+    }
+.stay {
+    top:305%;
+}
+.pr1{
+    top: 316%;
+    line-height: 25px;
+    font-size: large;
+}
+.ime1{
+    position: absolute;
+    left: 40%;
+    top: 295%;
+    width: 50%;
+    background-image: url('https://i.pinimg.com/originals/ec/a8/9a/eca89af3c15d4e1fe509baac34517f25.jpg');
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+.ime1>img {
+width: 50%;
+}
+.ime2{
+    position: absolute;
+    left: 12%;
+    top: 355%;
+    width: 70%;
+    background-image: url('https://i.pinimg.com/originals/ec/a8/9a/eca89af3c15d4e1fe509baac34517f25.jpg');
+    background-size: 69%;
+    background-repeat: no-repeat;
+}
+.stay1, .pr2, .stay5, .pr6{
+    position: absolute;
+    left:62% ;
+}
+.pr2{
+    top: 370%;
+    line-height: 25px;
+    font-size: large;
+}
+.stay1{
+    top: 356%;
+}
+.ime2>img{
+    width: 65%;
+}
+.ime3{
+    position: absolute;
+    left: 40%;
+    top: 415%;
+    width: 55%;
+    background-image: url('https://i.pinimg.com/originals/ec/a8/9a/eca89af3c15d4e1fe509baac34517f25.jpg');
+    background-size: 69%;
+    background-repeat: no-repeat;
+}
+.ime3>img, .ime4>img, .ime5>img{
+width: 55%;
+}
+.pr3{
+    top: 435%;
+    line-height: 20px;
+    font-size: large;
+}
+.stay2{
+    top: 423%;
+}
+.ime4, .ime5, .ime6{
+    position: absolute;
+    width: 55%;
+    background-image: url('https://i.pinimg.com/originals/ec/a8/9a/eca89af3c15d4e1fe509baac34517f25.jpg');
+    background-size: 74%;
+    background-repeat: no-repeat;
+}
+.ime4{
+    top: 475%;
+    left: 12%;
+}
+.stay3{
+    top:488%;
+}
+.pr4{
+    top: 500%;
+    line-height: 20px;
+    font-size: large;
+}
+.pr4, .stay3{
+    position: absolute;
+    left: 56%;
+}
+.ime5{
+    top: 545%;
+    left: 39%;
+    padding-left: 6%;
+}
+.pr5, .stay4{
+    position: absolute;
+    left: 12%;
+}
+.stay4{
+    top: 558%;
+}
+.pr5{
+    top: 573%;
+    line-height: 20px;
+    font-size: large;
+}
+.ime6{
+    top: 605%;
+    left: 12%;
+    padding-left: 6%;
+}
+.stay5{
+    top: 618%;
+}
+.pr6{
+    top: 633%;
+    line-height: 20px;
+    font-size: large;
+}
+.ime6>img{
+     width: 35%;
+}
+/*#lq{
+    position: absolute;
+    left: 2%;
+    top: 685%;
+}*/
+.ccl{
+    position: absolute;
+    top: 710%;
+    left: 45%;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: yellow;
+}
+.hdg{
+    position: absolute;
+    top: 720%;
+    left: 36%;
+}
+.long{
+    position: absolute;
+    top: 733%;
+    left: 0%;
+    width: 99%;
+    height: 245px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.d1, .d2, .d3{
+    width: 31%;
+    margin: 1%;
+    padding-left: 3%;
+    padding-top: 2%;
+    border-radius: 10px;
+    }
+.d1, .d2, .d3{
+    background-color:lightgray;
+}
+ .d1>p ,.d2>p, .d3>p{
+     color: lightslategrey;
+ }
+ .rm{
+     position: absolute;
+     left: 37%;
+     top:780%;
+ }
+ .rm>a{
+     color: orange;
+     font-size: x-large;
+     text-decoration: none;
+ }
+.picdiv{
+    position: absolute;
+    left: 20%;
+    top: 795%;
+    display: flex;
+    flex-wrap: nowrap;
+   }
+   .picdiv>img{
+       margin: 0px 5px 0px 5px;
+   }
+.bckcolor{
+    position: absolute;
+    background-color: aliceblue;
+    top: 850%;
+    height: 1600px;
+    left: 0%;
+    width: 100%;
+
+}
+.imgcolor{
+    width: 10%;
+    position: absolute;
+    top: 3%;
+    left: 70%;
+}
+.textcolor{
+   margin-top: 5%;
+   margin-left: 20%;
+   line-height: 25px;
+   font-size: large;
+}
+.textcolor>a{
+    text-decoration: none;
+    color: teal;
+    font-size:x-large;
+    font-weight: 400;
+   }
+   .colorbg{
+       background-color: teal;
+       width: 94%;
+       margin-top: 130px;
+       border-radius: 30px;
+       margin-left: 2%;
+       position: relative;
+       height: 370px;
+       padding-left: 40px;
+       padding-top: 120px;
+   }
+   .colorbg>h1{
+       color: white;
+   }
+   .colorbg>p{
+       line-height: 23px;
+       font-size: large;
+       color: white;
+   }
+   .colorimg{
+       position: absolute;
+        left: 55%;
+        top:10%;
+       width: 45%;
+   }
+     #cb{
+      color: teal;
+      position: absolute;
+      top: 60%;
+      left: 23%;
+      font-size: large;
+      height: 40px;
+      width: 150px;
+      border-radius: 5px;
+    }
+    .ipt{
+        position: absolute;
+        top: 60%;
+        left:5%;
+        width: 200px;
+        height: 40px;
+        border-radius: 5px;
+    }
+    .fotter{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        width: 94%;
+        padding-left: 5%;
+    }
+    .ft1, .ft2, .ft3, .ft4,.ft5, .ft6{
+        margin: 25px;
+        margin-right: 10px;
+        color: lightblue;
+    }
+    .ft1>a, .ft2>a, .ft3>a, .ft4>a,.ft5>a, .ft6>a{
+        line-height: 40px;
+        text-decoration: none;
+        color:Black;
+        font-size: large;
+     }
+.ht{
+    text-align: center;
+    margin-top: 90px;
+}
+.ht1{
+    position: absolute;
+    top:231px;
+    left: 60%;
+    cursor: pointer;
+}
+#ipt1{
+    text-decoration:underline;
+    width:45px;
+    color:rgb(8, 148, 134);
+}
+#choose{
+    color: rgb(8, 148, 134);
+}
+.leftDiv1{
+background-color: rgb(155, 224, 224);
+margin-top: 90px;
+width: 230px;
+margin-left: 50px;
+}
+.parent1{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    position: absolute;
+    left: 26%;
+    top: 47%;
+}
+.starter, .pro, .business, .enterprise{
+    margin: 10px;
+    border: 2px solid whitesmoke ;
+    background-color: white;
+    width: 200px;
+    border-radius: 5px;
+    text-align: center;
+}
+.enterprise{
+    background-color:whitesmoke;
+}
+
+.starter>h3, .pro>h3, .business>h3, .enterprise>h3{
+    text-align: center;
+}
+.starter>h3{
+    color: rgb(37, 188, 238);
+}
+.pro>h3{
+    color: rgb(13, 150, 150);
+}
+.business>h3{
+    color: rgb(231, 122, 231);
+}
+.enterprise>h3{
+    color: rgb(78, 78, 226);
+}
+#starter1, #pro1, #business1{
+    text-align: center;
+}
+
+.starter>a{
+    text-align: center;
+}
+#starter1{
+    color: rgb(73, 188, 226);
+}
+#pro1{
+    color:teal;
+}
+#business1{
+    color: purple;
+}
+#business1>a, #pro1>a, #starter1>a{
+
+color: black;
+}
+.enterprise>p{
+    color: rgb(159, 201, 238);
+    text-align: center;
+}
+.enterprise{
+    text-align: center;
+}
+.be{
+    margin-left:50px ;
+}
+.cf{
+    margin-left: 50px;
+    margin-top: 23px;
+}
+.aft{
+    margin-left: 50px;
+    margin-top: 21px;
+}
+.ah{
+    margin-left: 50px;
+    margin-top: 21px;
+}
+.s{
+    margin-left: 50px;
+    margin-top: 21px;
+}
+.clgm{
+    position: absolute;
+    left: 10%;
+    top: 320%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    text-align: center;
+}
+.clg{
+    position: absolute;
+    left: 39%;
+    top: 5%;
+}
+.clg1, .clg2, .clg3, .clg4, .clg5, .clg6, .clg7, .clg8{
+    width:6%;
+    margin: 30px;
+    margin-top: 105px;
 }
